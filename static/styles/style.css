@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Default / Light Theme Variables */
+:root {
+    font-size: 100%;
+    --bg-color: #ececec;
+    --text-color: #2c2c2c;
+    --box-bg: #fffafa;
+}
+
+/* Dark Theme Variables (OS Preference) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #2c2c2c;
+        --text-color: #f5f5f5;
+        --box-bg: #1e1e1e;
+    }
+}
+
+/* Manual Theme Overrides */
+[data-theme="light"] {
+    --bg-color: #ececec;
+    --text-color: #2c2c2c;
+    --box-bg: #fffafa;
+}
+
+[data-theme="dark"] {
+    --bg-color: #2c2c2c;
+    --text-color: #f5f5f5;
+    --box-bg: #1e1e1e;
+}
+
+/* Styles applied using variables */
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.box {
+    background-color: var(--box-bg);
+}
+

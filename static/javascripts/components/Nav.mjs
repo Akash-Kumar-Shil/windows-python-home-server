@@ -58,6 +58,8 @@ const iconColor = Object.entries(menuLinks)
 setStyles(
   "#server_menu369",
   `
+  display: flex;
+  justify-content: center;
   margin: 1.3rem;
   @media (max-width: 768px) {
     margin: 1rem;
@@ -68,6 +70,7 @@ setStyles(
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    max-width: 40rem;
     border-radius: 0.5rem;
     padding: 1rem;
     font-size: 1.5rem;
